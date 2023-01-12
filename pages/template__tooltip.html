@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/reusable-component-library/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Tooltip</title>
+  <script type="module" crossorigin src="/reusable-component-library/assets/theme-changer-8719ca45.js"></script>
+  <link rel="stylesheet" href="/reusable-component-library/assets/theme-changer-27865a49.css">
+</head>
+<body>
+    <div class="page page_template">
+        <header class="header page__header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__burger">
+                        <button class="burger" id="burger-menu-open">
+                            <div class="burger__wrapper">
+                                <svg class="burger__icon">
+                                    <use href="/reusable-component-library/assets/sprite-dd2b555f.svg#burger">
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="burger-menu" id="burger-menu">
+                            <div class="burger-menu__header">
+                                <button class="burger" id="burger-menu-close">
+                                    <svg class="burger__icon">
+                                        <use href="/reusable-component-library/assets/sprite-dd2b555f.svg#burger-close">
+                                    </svg>
+                                </button>
+                                <svg class="burger__logo">
+                                    <use href="/reusable-component-library/assets/sprite-dd2b555f.svg#logo">
+                                </svg>
+                            </div>
+                            <div class="burger-menu__body">
+                                <div class="burger-menu__toggler">
+                                    <div class="burger-menu__text">Dark mode</div>
+                                    <label class="toggler">
+                                        <input type="checkbox" class="toggler__input" id="theme-changer-mobile">
+                                        <div class="toggler__state">
+                                            <div class="toggler__control">
+                                                <div class="toggler__switcher"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <nav class="menu">
+                                    <ul class="menu__list">
+                                        <h4 class="menu__title">Elements</h4>
+                                        <a href="./template__avatar.html" class="menu__item">Avatar</a>
+                                        <a href="./template__custom.html" class="menu__item">Custom form elements</a>
+                                        <a href="./template__histogram.html" class="menu__item">Histogram</a>
+                                    </ul>
+                                    <ul class="menu__list">
+                                        <h4 class="menu__title">Containers</h4>
+                                        <a href="./template__tooltip.html" class="menu__item">Tooltip</a>
+                                        <a href="./template__calendar.html" class="menu__item">Calendar</a>
+                                        <a href="./template__modal.html" class="menu__item">Modal dialog</a>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__logo">
+                        <svg class="header__icon">
+                            <use href="/reusable-component-library/assets/sprite-dd2b555f.svg#logo">
+                        </svg>
+                    </div>
+                    <div class="header__right-side">
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <a class="header__item" href="../index.html">Components</a>
+                                <a class="header__item" href="#" title="Inactive">About</a>
+                                <a class="header__item" href="#" title="Inactive">Contact</a>
+                            </ul>
+                        </nav>
+                        <div class="header__toggler">
+                            <svg class="header__sun">
+                                <use href="/reusable-component-library/assets/sprite-dd2b555f.svg#sun">
+                            </svg>
+                            <label class="toggler">
+                                <input type="checkbox" class="toggler__input" id="theme-changer">
+                                <div class="toggler__state">
+                                    <div class="toggler__control">
+                                        <div class="toggler__switcher"></div>
+                                    </div>
+                                </div>
+                            </label>
+                            <svg class="header__moon">
+                                <use href="/reusable-component-library/assets/sprite-dd2b555f.svg#moon">
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="preview page__preview">
+            <div class="container">
+                <div class="content">
+                    <div class="content__inner">
+                        <nav class="menu content__menu">
+                            <ul class="menu__list">
+                                <h4 class="menu__title">Elements</h4>
+                                <a href="./template__avatar.html" class="menu__item">Avatar</a>
+                                <a href="./template__custom.html" class="menu__item">Custom form elements</a>
+                                <a href="./template__histogram.html" class="menu__item">Histogram</a>
+                            </ul>
+                            <ul class="menu__list">
+                                <h4 class="menu__title">Containers</h4>
+                                <a href="./template__tooltip.html" class="menu__item">Tooltip</a>
+                                <a href="./template__calendar.html" class="menu__item">Calendar</a>
+                                <a href="./template__modal.html" class="menu__item">Modal dialog</a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="detail content__detail">
+                        <h3 class="detail__title">Tooltip</h3>
+                        <div class="detail__component detail__component_tooltip">
+                            <div class="tooltip">
+                                <div class="tooltip__trigger">
+                                    <svg class="tooltip__icon">
+                                        <use href="/reusable-component-library/assets/sprite-dd2b555f.svg#question">
+                                    </svg>
+                                </div>
+                                <div class="tooltip__helper">
+                                    Helper Text
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs">
+                            <input class="tabs__input" type="radio" name="tabs" id="html-tab" checked>
+                            <input class="tabs__input" type="radio" name="tabs" id="css-tab">
+                            <div class="tabs__menu">
+                                <label class="tabs__label" for="html-tab">HTML</label>
+                                <label class="tabs__label" for="css-tab">CSS</label>
+                            </div>
+                            <div class="tabs__content tabs__content_html">
+<pre><code style="display:block;overflow-x:auto;padding:0.5em;background:#444;color:#ddd"><span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"tooltip"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"tooltip__trigger"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">svg</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"tooltip__icon"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">use</span> <span class="hljs-attr">href</span>=<span style="color:#d88">"../../assets/images/sprite.svg#question"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"tooltip__helper"</span>&gt;</span>
+        Helper Text
+    <span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span></code></pre>
+                            </div>
+                            <div class="tabs__content tabs__content_css">
+<pre><code style="display:block;overflow-x:auto;padding:0.5em;background:#444;color:#ddd"><span class="hljs-selector-class">.tooltip</span> {
+    <span style="color:#d88">position</span>: relative;
+    <span style="color:#d88">display</span>: inline-block;
+}
+
+<span class="hljs-selector-class">.tooltip__trigger</span><span class="hljs-selector-pseudo">:hover</span> ~ <span class="hljs-selector-class">.tooltip__helper</span> {
+    <span style="color:#d88">display</span>: block
+}
+
+<span class="hljs-selector-class">.tooltip__icon</span> {
+    <span style="color:#d88">cursor</span>: pointer;
+    <span style="color:#d88">width</span>: <span class="hljs-number">24px</span>;
+    <span style="color:#d88">height</span>: <span class="hljs-number">24px</span>;
+    <span style="color:#d88">color</span>: <span style="color:#d88">var</span>(--black);
+}
+
+<span class="hljs-selector-class">.tooltip__helper</span> {
+    <span style="color:#d88">display</span>: none;
+    <span style="color:#d88">padding</span>: <span class="hljs-number">13px</span> <span class="hljs-number">21px</span> <span class="hljs-number">8px</span>;
+    <span style="color:#d88">background</span>: <span style="color:#d88">var</span>(--blue);
+    <span style="color:#d88">box-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">2px</span> <span class="hljs-number">4px</span> <span style="color:#d88">rgba</span>(33, 36, 41, 0.05);
+    <span style="color:#d88">border-radius</span>: <span class="hljs-number">10px</span>;
+    <span style="color:#d88">color</span>: <span style="color:#d88">var</span>(--gray-1);
+    <span style="color:#d88">font-family</span>: <span style="color:#d88">'Inter'</span>;
+    <span style="color:#d88">font-style</span>: normal;
+    <span style="color:#d88">font-weight</span>: <span class="hljs-number">400</span>;
+    <span style="color:#d88">font-size</span>: <span class="hljs-number">16px</span>;
+    <span style="color:#d88">line-height</span>: <span class="hljs-number">24px</span>;
+    <span style="color:#d88">white-space</span>: nowrap;
+    <span style="color:#d88">position</span>: absolute;
+    <span style="color:#d88">bottom</span>: <span style="color:#d88">calc</span>(100% + 8px);
+    <span style="color:#d88">left</span>: <span class="hljs-number">50%</span>;
+    <span style="color:#d88">transform</span>: <span style="color:#d88">translateX</span>(-50%);
+}
+
+<span class="hljs-selector-class">.tooltip__helper</span><span class="hljs-selector-pseudo">::after</span> {
+    <span style="color:#d88">content</span>: <span style="color:#d88">""</span>;
+    <span style="color:#d88">width</span>: <span class="hljs-number">0</span>;
+    <span style="color:#d88">height</span>: <span class="hljs-number">0</span>;
+    <span style="color:#d88">border</span>: <span class="hljs-number">10px</span> solid transparent;
+    <span style="color:#d88">border-top</span>: <span class="hljs-number">5px</span> solid <span style="color:#d88">var</span>(--blue);
+    <span style="color:#d88">position</span>: absolute;
+    <span style="color:#d88">top</span>: <span class="hljs-number">100%</span>;
+    <span style="color:#d88">left</span>: <span class="hljs-number">50%</span>;
+    <span style="color:#d88">transform</span>: <span style="color:#d88">translateX</span>(-50%);
+}
+
+<span class="hljs-selector-class">.tooltip__helper_preview</span> {
+    <span style="color:#d88">display</span>: block;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer page__footer">
+            <div class="container">
+                <div class="footer__template">
+                    <h5 class="footer__template-title">Reusable component library</h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
