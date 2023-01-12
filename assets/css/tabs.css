@@ -1,0 +1,84 @@
+.tabs {
+    position: relative;
+}
+
+.tabs__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs__menu {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.tabs__label {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.tabs__label::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    background: var(--font-color);
+    display: none;
+}
+
+.tabs__content {
+    display: none;
+}
+
+#all-tab:checked~.tabs__menu .tabs__label[for=all-tab],
+#elements-tab:checked~.tabs__menu .tabs__label[for=elements-tab],
+#containers-tab:checked~.tabs__menu .tabs__label[for=containers-tab],
+#html-tab:checked~.tabs__menu .tabs__label[for=html-tab],
+#css-tab:checked~.tabs__menu .tabs__label[for=css-tab] {
+    color: var(--font-color);
+}
+
+#all-tab:checked~.tabs__menu .tabs__label[for=all-tab]::after,
+#elements-tab:checked~.tabs__menu .tabs__label[for=elements-tab]::after,
+#containers-tab:checked~.tabs__menu .tabs__label[for=containers-tab]::after,
+#html-tab:checked~.tabs__menu .tabs__label[for=html-tab]::after,
+#css-tab:checked~.tabs__menu .tabs__label[for=css-tab]::after {
+    display: block;
+}
+
+#all-tab:checked~.tabs__content_all,
+#elements-tab:checked~.tabs__content_elements,
+#containers-tab:checked~.tabs__content_containers,
+#html-tab:checked~.tabs__content_html,
+#css-tab:checked~.tabs__content_css {
+    display: block;
+}
+
+@media screen and (max-width: 576px) {
+
+    .tabs__content_html,
+    .tabs__content_css {
+        max-width: 576px;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .tabs__content_html,
+    .tabs__content_css {
+        width: 320px;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}

@@ -1,0 +1,47 @@
+.button {
+    border: none;
+    background: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 8px;
+    padding: 14px 62px;
+    cursor: pointer;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.button_primary {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.button_secondary {
+    background: var(--purple);
+    color: var(--white);
+}
+
+.button_alternate {
+    border: 1px solid var(--gray-3);
+    color: var(--gray-4);
+}
+
+.button_primary:hover {
+    background: #2342C0;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_secondary:hover  {
+    background: #5028C6;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_alternate:hover {
+    border: 1px solid var(--black);
+    transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
+}

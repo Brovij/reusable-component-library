@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Medium.ttf), url(../fonts/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Regular.ttf), url(../fonts/Inter-SemiBold.ttf), url(../fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}

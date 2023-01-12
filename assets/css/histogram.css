@@ -1,0 +1,87 @@
+.histogram {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px 24px 24px;
+}
+
+.histogram_preview {
+    width: 280px;
+}
+
+.histogram__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.histogram__left-side {
+}
+
+.histogram__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--font-color);
+    opacity: 0.8;
+    padding-bottom: 6px;
+    margin-right: 47px;
+}
+
+.histogram__total {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--font-color);
+}
+
+.histogram__right-side {
+}
+
+.histogram__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.histogram__link:hover {
+    border-bottom: 1px solid var(--blue);
+}
+
+.histogram__bar {
+    display: flex;
+	align-items: flex-end;
+	gap: 1px;
+	height: 50px;
+	margin-top: 39px;
+}
+
+.histogram__bars {
+    background: var(--blue);
+	flex: 1 1 9px;
+    animation: showUp 0.6s ease-out;
+}
+
+@keyframes showUp {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    50% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom center;
+    }
+}

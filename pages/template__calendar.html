@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Calendar</title>
+</head>
+<body>
+    <div class="page page_template">
+        <header class="header page__header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__burger">
+                        <button class="burger" id="burger-menu-open">
+                            <div class="burger__wrapper">
+                                <svg class="burger__icon">
+                                    <use href="../assets/images/sprite.svg#burger">
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="burger-menu" id="burger-menu">
+                            <div class="burger-menu__header">
+                                <button class="burger" id="burger-menu-close">
+                                    <svg class="burger__icon">
+                                        <use href="../assets/images/sprite.svg#burger-close">
+                                    </svg>
+                                </button>
+                                <svg class="burger__logo">
+                                    <use href="../assets/images/sprite.svg#logo">
+                                </svg>
+                            </div>
+                            <div class="burger-menu__body">
+                                <div class="burger-menu__toggler">
+                                    <div class="burger-menu__text">Dark mode</div>
+                                    <label class="toggler">
+                                        <input type="checkbox" class="toggler__input" id="theme-changer-mobile">
+                                        <div class="toggler__state">
+                                            <div class="toggler__control">
+                                                <div class="toggler__switcher"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <nav class="menu">
+                                    <ul class="menu__list">
+                                        <h4 class="menu__title">Elements</h4>
+                                        <a href="./template__avatar.html" class="menu__item">Avatar</a>
+                                        <a href="./template__custom.html" class="menu__item">Custom form elements</a>
+                                        <a href="./template__histogram.html" class="menu__item">Histogram</a>
+                                    </ul>
+                                    <ul class="menu__list">
+                                        <h4 class="menu__title">Containers</h4>
+                                        <a href="./template__tooltip.html" class="menu__item">Tooltip</a>
+                                        <a href="./template__calendar.html" class="menu__item">Calendar</a>
+                                        <a href="./template__modal.html" class="menu__item">Modal dialog</a>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__logo">
+                        <svg class="header__icon">
+                            <use href="../assets/images/sprite.svg#logo">
+                        </svg>
+                    </div>
+                    <div class="header__right-side">
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <a class="header__item" href="../index.html">Components</a>
+                                <a class="header__item" href="#" title="Inactive">About</a>
+                                <a class="header__item" href="#" title="Inactive">Contact</a>
+                            </ul>
+                        </nav>
+                        <div class="header__toggler">
+                            <svg class="header__sun">
+                                <use href="../assets/images/sprite.svg#sun">
+                            </svg>
+                            <label class="toggler">
+                                <input type="checkbox" class="toggler__input" id="theme-changer">
+                                <div class="toggler__state">
+                                    <div class="toggler__control">
+                                        <div class="toggler__switcher"></div>
+                                    </div>
+                                </div>
+                            </label>
+                            <svg class="header__moon">
+                                <use href="../assets/images/sprite.svg#moon">
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="preview page__preview">
+            <div class="container">
+                <div class="content">
+                    <div class="content__inner">
+                        <nav class="menu content__menu">
+                            <ul class="menu__list">
+                                <h4 class="menu__title">Elements</h4>
+                                <a href="./template__avatar.html" class="menu__item">Avatar</a>
+                                <a href="./template__custom.html" class="menu__item">Custom form elements</a>
+                                <a href="./template__histogram.html" class="menu__item">Histogram</a>
+                            </ul>
+                            <ul class="menu__list">
+                                <h4 class="menu__title">Containers</h4>
+                                <a href="./template__tooltip.html" class="menu__item">Tooltip</a>
+                                <a href="./template__calendar.html" class="menu__item">Calendar</a>
+                                <a href="./template__modal.html" class="menu__item">Modal dialog</a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="detail content__detail">
+                        <h3 class="detail__title">Calendar</h3>
+                        <div class="detail__component">
+                            <div class="calendar">
+                                <div class="calendar__title">
+                                    October 2022
+                                </div>
+                                <div class="calendar__inner">
+                                    <div class="calendar__day_weekday">Mon</div>
+                                    <div class="calendar__day_weekday">Tue</div>
+                                    <div class="calendar__day_weekday">Wed</div>
+                                    <div class="calendar__day_weekday">Thu</div>
+                                    <div class="calendar__day_weekday">Fri</div>
+                                    <div class="calendar__day_weekday">Sat</div>
+                                    <div class="calendar__day_weekday">Sun</div>
+                                    <div class="calendar__day">1</div>
+                                    <div class="calendar__day">2</div>
+                                    <div class="calendar__day">3</div>
+                                    <div class="calendar__day">4</div>
+                                    <div class="calendar__day">5</div>
+                                    <div class="calendar__day">6</div>
+                                    <div class="calendar__day">7</div>
+                                    <div class="calendar__day">8</div>
+                                    <div class="calendar__day">9</div>
+                                    <div class="calendar__day">10</div>
+                                    <div class="calendar__day">11</div>
+                                    <div class="calendar__day">12</div>
+                                    <div class="calendar__day">13</div>
+                                    <div class="calendar__day">14</div>
+                                    <div class="calendar__day">15</div>
+                                    <div class="calendar__day">16</div>
+                                    <div class="calendar__day">17</div>
+                                    <div class="calendar__day calendar__day_active">18</div>
+                                    <div class="calendar__day calendar__day_marked">19</div>
+                                    <div class="calendar__day calendar__day_marked">20</div>
+                                    <div class="calendar__day calendar__day_marked">21</div>
+                                    <div class="calendar__day calendar__day_marked">22</div>
+                                    <div class="calendar__day calendar__day_active">23</div>
+                                    <div class="calendar__day">24</div>
+                                    <div class="calendar__day">25</div>
+                                    <div class="calendar__day">26</div>
+                                    <div class="calendar__day">27</div>
+                                    <div class="calendar__day">28</div>
+                                    <div class="calendar__day">29</div>
+                                    <div class="calendar__day">30</div>
+                                    <div class="calendar__day">31</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs">
+                            <input class="tabs__input" type="radio" name="tabs" id="html-tab" checked>
+                            <input class="tabs__input" type="radio" name="tabs" id="css-tab">
+                            <div class="tabs__menu">
+                                <label class="tabs__label" for="html-tab">HTML</label>
+                                <label class="tabs__label" for="css-tab">CSS</label>
+                            </div>
+                            <div class="tabs__content tabs__content_html">
+<pre><code style="display:block;overflow-x:auto;padding:0.5em;background:#444;color:#ddd"><span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__title"</span>&gt;</span>
+        October 2022
+    <span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__inner"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day_weekday"</span>&gt;</span>Mon<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day_weekday"</span>&gt;</span>Tue<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day_weekday"</span>&gt;</span>Wed<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day_weekday"</span>&gt;</span>Thu<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day_weekday"</span>&gt;</span>Fri<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day_weekday"</span>&gt;</span>Sat<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day_weekday"</span>&gt;</span>Sun<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>7<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>9<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>11<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>12<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>13<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>14<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>16<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>17<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day calendar__day_active"</span>&gt;</span>18<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day calendar__day_marked"</span>&gt;</span>19<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day calendar__day_marked"</span>&gt;</span>20<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day calendar__day_marked"</span>&gt;</span>21<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day calendar__day_marked"</span>&gt;</span>22<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day calendar__day_active"</span>&gt;</span>23<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>24<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>25<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>26<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>27<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>28<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>29<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>30<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"calendar__day"</span>&gt;</span>31<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span></code></pre>
+                            </div>
+                            <div class="tabs__content tabs__content_css">
+<pre><code style="display:block;overflow-x:auto;padding:0.5em;background:#444;color:#ddd"><span class="hljs-selector-class">.calendar</span> {
+    <span style="color:#d88">background</span>: <span style="color:#d88">var</span>(--white);
+    <span style="color:#d88">border</span>: <span class="hljs-number">1px</span> solid <span style="color:#d88">var</span>(--gray-3);
+    <span style="color:#d88">border-radius</span>: <span class="hljs-number">8px</span>;
+    <span style="color:#d88">padding</span>: <span class="hljs-number">28px</span> <span class="hljs-number">34px</span> <span class="hljs-number">40px</span> <span class="hljs-number">26px</span>;
+    <span style="color:#d88">width</span>: fit-content;
+}
+
+<span class="hljs-selector-class">.calendar_preview</span> {
+    <span style="color:#d88">padding</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-class">.calendar__title</span> {
+    <span style="color:#d88">font-family</span>: <span style="color:#d88">'Inter'</span>;
+    <span style="color:#d88">font-style</span>: normal;
+    <span style="color:#d88">font-weight</span>: <span class="hljs-number">600</span>;
+    <span style="color:#d88">font-size</span>: <span class="hljs-number">20px</span>;
+    <span style="color:#d88">line-height</span>: <span class="hljs-number">24px</span>;
+    <span style="color:#d88">color</span>: <span class="hljs-number">#334D6E</span>;
+    <span style="color:#d88">text-align</span>: center;
+    <span style="color:#d88">margin-bottom</span>: <span class="hljs-number">24px</span>;
+}
+
+<span class="hljs-selector-class">.calendar__inner</span> {
+    <span style="color:#d88">display</span>: grid;
+    <span style="color:#d88">grid-template-columns</span>: <span style="color:#d88">repeat</span>(7, 1fr);
+    <span style="color:#d88">align-items</span>: center;
+    <span style="color:#d88">justify-items</span>: center;
+    <span style="color:#d88">gap</span>: <span class="hljs-number">16px</span> <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-class">.calendar__inner_preview</span> {
+    <span style="color:#d88">gap</span>: <span class="hljs-number">5px</span>;
+}
+
+<span class="hljs-selector-class">.calendar__day_weekday</span> {
+    <span style="color:#d88">font-family</span>: <span style="color:#d88">'Inter'</span>;
+    <span style="color:#d88">font-style</span>: normal;
+    <span style="color:#d88">font-weight</span>: <span class="hljs-number">400</span>;
+    <span style="color:#d88">font-size</span>: <span class="hljs-number">14px</span>;
+    <span style="color:#d88">line-height</span>: <span class="hljs-number">20px</span>;
+    <span style="color:#d88">display</span>: flex;
+    <span style="color:#d88">align-items</span>: flex-end;
+    <span style="color:#d88">text-align</span>: center;
+    <span style="color:#d88">color</span>: <span class="hljs-number">#90A0B7</span>;
+    <span style="color:#d88">margin-bottom</span>: <span class="hljs-number">8px</span>;
+}
+
+<span class="hljs-selector-class">.calendar__day</span> {
+    <span style="color:#d88">font-family</span>: <span style="color:#d88">'Source Sans Pro'</span>;
+    <span style="color:#d88">font-style</span>: normal;
+    <span style="color:#d88">font-weight</span>: <span class="hljs-number">400</span>;
+    <span style="color:#d88">font-size</span>: <span class="hljs-number">16px</span>;
+    <span style="color:#d88">line-height</span>: <span class="hljs-number">20px</span>;
+    <span style="color:#d88">text-align</span>: center;
+    <span style="color:#d88">color</span>: <span class="hljs-number">#334D6E</span>;
+}
+
+<span class="hljs-selector-class">.calendar__day_active</span>,
+<span class="hljs-selector-class">.calendar__day_marked</span> {
+    <span style="color:#d88">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-class">.calendar__day_active</span> {
+    <span style="color:#d88">background</span>: <span style="color:#d88">var</span>(--blue);
+}
+
+<span class="hljs-selector-class">.calendar__day_marked</span> {
+    <span style="color:#d88">background</span>: <span class="hljs-number">#A0B1F5</span>;
+    <span style="color:#d88">opacity</span>: <span class="hljs-number">0.2</span>;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer page__footer">
+            <div class="container">
+                <div class="footer__template">
+                    <h5 class="footer__template-title">Reusable component library</h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

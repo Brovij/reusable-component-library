@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Histogram</title>
+</head>
+<body>
+    <div class="page page_template">
+        <header class="header page__header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__burger">
+                        <button class="burger" id="burger-menu-open">
+                            <div class="burger__wrapper">
+                                <svg class="burger__icon">
+                                    <use href="../assets/images/sprite.svg#burger">
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="burger-menu" id="burger-menu">
+                            <div class="burger-menu__header">
+                                <button class="burger" id="burger-menu-close">
+                                    <svg class="burger__icon">
+                                        <use href="../assets/images/sprite.svg#burger-close">
+                                    </svg>
+                                </button>
+                                <svg class="burger__logo">
+                                    <use href="../assets/images/sprite.svg#logo">
+                                </svg>
+                            </div>
+                            <div class="burger-menu__body">
+                                <div class="burger-menu__toggler">
+                                    <div class="burger-menu__text">Dark mode</div>
+                                    <label class="toggler">
+                                        <input type="checkbox" class="toggler__input" id="theme-changer-mobile">
+                                        <div class="toggler__state">
+                                            <div class="toggler__control">
+                                                <div class="toggler__switcher"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <nav class="menu">
+                                    <ul class="menu__list">
+                                        <h4 class="menu__title">Elements</h4>
+                                        <a href="./template__avatar.html" class="menu__item">Avatar</a>
+                                        <a href="./template__custom.html" class="menu__item">Custom form elements</a>
+                                        <a href="./template__histogram.html" class="menu__item">Histogram</a>
+                                    </ul>
+                                    <ul class="menu__list">
+                                        <h4 class="menu__title">Containers</h4>
+                                        <a href="./template__tooltip.html" class="menu__item">Tooltip</a>
+                                        <a href="./template__calendar.html" class="menu__item">Calendar</a>
+                                        <a href="./template__modal.html" class="menu__item">Modal dialog</a>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__logo">
+                        <svg class="header__icon">
+                            <use href="../assets/images/sprite.svg#logo">
+                        </svg>
+                    </div>
+                    <div class="header__right-side">
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <a class="header__item" href="../index.html">Components</a>
+                                <a class="header__item" href="#" title="Inactive">About</a>
+                                <a class="header__item" href="#" title="Inactive">Contact</a>
+                            </ul>
+                        </nav>
+                        <div class="header__toggler">
+                            <svg class="header__sun">
+                                <use href="../assets/images/sprite.svg#sun">
+                            </svg>
+                            <label class="toggler">
+                                <input type="checkbox" class="toggler__input" id="theme-changer">
+                                <div class="toggler__state">
+                                    <div class="toggler__control">
+                                        <div class="toggler__switcher"></div>
+                                    </div>
+                                </div>
+                            </label>
+                            <svg class="header__moon">
+                                <use href="../assets/images/sprite.svg#moon">
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="preview page__preview">
+            <div class="container">
+                <div class="content">
+                    <div class="content__inner">
+                        <nav class="menu content__menu">
+                            <ul class="menu__list">
+                                <h4 class="menu__title">Elements</h4>
+                                <a href="./template__avatar.html" class="menu__item">Avatar</a>
+                                <a href="./template__custom.html" class="menu__item">Custom form elements</a>
+                                <a href="./template__histogram.html" class="menu__item">Histogram</a>
+                            </ul>
+                            <ul class="menu__list">
+                                <h4 class="menu__title">Containers</h4>
+                                <a href="./template__tooltip.html" class="menu__item">Tooltip</a>
+                                <a href="./template__calendar.html" class="menu__item">Calendar</a>
+                                <a href="./template__modal.html" class="menu__item">Modal dialog</a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="detail content__detail">
+                        <h3 class="detail__title">Histogram</h3>
+                        <div class="detail__component">
+                            <div class="histogram">
+                                <div class="histogram__wrapper">
+                                    <div class="histogram__left-side">
+                                        <div class="histogram__title">Total orders</div>
+                                        <div class="histogram__total">50254</div>
+                                    </div>
+                                    <div class="histogram__right-side">
+                                        <div class="histogram__link">View all</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__bar">
+                                    <div class="histogram__bars" style="height:50%"></div>
+                                    <div class="histogram__bars" style="height:100%"></div>
+                                    <div class="histogram__bars" style="height:30%"></div>
+                                    <div class="histogram__bars" style="height:70%"></div>
+                                    <div class="histogram__bars" style="height:50%"></div>
+                                    <div class="histogram__bars" style="height:50%"></div>
+                                    <div class="histogram__bars" style="height:20%"></div>
+                                    <div class="histogram__bars" style="height:30%"></div>
+                                    <div class="histogram__bars" style="height:60%"></div>
+                                    <div class="histogram__bars" style="height:80%"></div>
+                                    <div class="histogram__bars" style="height:60%"></div>
+                                    <div class="histogram__bars" style="height:70%"></div>
+                                    <div class="histogram__bars" style="height:10%"></div>
+                                    <div class="histogram__bars" style="height:50%"></div>
+                                    <div class="histogram__bars" style="height:20%"></div>
+                                    <div class="histogram__bars" style="height:30%"></div>
+                                    <div class="histogram__bars" style="height:60%"></div>
+                                    <div class="histogram__bars" style="height:80%"></div>
+                                    <div class="histogram__bars" style="height:60%"></div>
+                                    <div class="histogram__bars" style="height:70%"></div>
+                                    <div class="histogram__bars" style="height:40%"></div>
+                                    <div class="histogram__bars" style="height:100%"></div>
+                                    <div class="histogram__bars" style="height:20%"></div>
+                                    <div class="histogram__bars" style="height:70%"></div>
+                                    <div class="histogram__bars" style="height:10%"></div>
+                                    <div class="histogram__bars" style="height:50%"></div>
+                                    <div class="histogram__bars" style="height:100%"></div>
+                                    <div class="histogram__bars" style="height:30%"></div>
+                                    <div class="histogram__bars" style="height:70%"></div>
+                                    <div class="histogram__bars" style="height:50%"></div>
+                                    <div class="histogram__bars" style="height:80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs">
+                            <input class="tabs__input" type="radio" name="tabs" id="html-tab" checked>
+                            <input class="tabs__input" type="radio" name="tabs" id="css-tab">
+                            <div class="tabs__menu">
+                                <label class="tabs__label" for="html-tab">HTML</label>
+                                <label class="tabs__label" for="css-tab">CSS</label>
+                            </div>
+                            <div class="tabs__content tabs__content_html">
+<pre><code style="display:block;overflow-x:auto;padding:0.5em;background:#444;color:#ddd"><span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__wrapper"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__left-side"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__title"</span>&gt;</span>Total orders<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__total"</span>&gt;</span>50254<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__right-side"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__link"</span>&gt;</span>View all<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bar"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:50%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:100%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:30%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:70%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:50%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:50%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:20%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:30%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:60%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:80%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:60%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:70%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:10%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:50%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:20%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:30%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:60%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:80%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:60%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:70%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:40%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:100%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:20%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:70%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:10%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:50%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:100%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:30%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:70%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:50%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"histogram__bars"</span> <span class="hljs-attr">style</span>=<span style="color:#d88">"height:80%"</span>&gt;</span><span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span></code></pre>
+                            </div>
+                            <div class="tabs__content tabs__content_css">
+<pre><code style="display:block;overflow-x:auto;padding:0.5em;background:#444;color:#ddd"><span class="hljs-selector-class">.histogram</span> {
+    <span style="color:#d88">background</span>: <span style="color:#d88">var</span>(--white);
+    <span style="color:#d88">border</span>: <span class="hljs-number">1px</span> solid <span style="color:#d88">var</span>(--gray-3);
+    <span style="color:#d88">border-radius</span>: <span class="hljs-number">8px</span>;
+    <span style="color:#d88">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">24px</span> <span class="hljs-number">24px</span>;
+}
+
+<span class="hljs-selector-class">.histogram__wrapper</span> {
+    <span style="color:#d88">display</span>: flex;
+    <span style="color:#d88">justify-content</span>: space-between;
+    <span style="color:#d88">align-items</span>: flex-start;
+}
+
+<span class="hljs-selector-class">.histogram__left-side</span> {
+}
+
+<span class="hljs-selector-class">.histogram__title</span> {
+    <span style="color:#d88">font-family</span>: <span style="color:#d88">'Inter'</span>;
+    <span style="color:#d88">font-style</span>: normal;
+    <span style="color:#d88">font-weight</span>: <span class="hljs-number">400</span>;
+    <span style="color:#d88">font-size</span>: <span class="hljs-number">16px</span>;
+    <span style="color:#d88">line-height</span>: <span class="hljs-number">24px</span>;
+    <span style="color:#d88">color</span>: <span style="color:#d88">var</span>(--black);
+    <span style="color:#d88">opacity</span>: <span class="hljs-number">0.8</span>;
+    <span style="color:#d88">padding-bottom</span>: <span class="hljs-number">6px</span>;
+    <span style="color:#d88">margin-right</span>: <span class="hljs-number">47px</span>;
+}
+
+<span class="hljs-selector-class">.histogram__total</span> {
+    <span style="color:#d88">font-family</span>: <span style="color:#d88">'Inter'</span>;
+    <span style="color:#d88">font-style</span>: normal;
+    <span style="color:#d88">font-weight</span>: <span class="hljs-number">400</span>;
+    <span style="color:#d88">font-size</span>: <span class="hljs-number">20px</span>;
+    <span style="color:#d88">line-height</span>: <span class="hljs-number">26px</span>;
+    <span style="color:#d88">color</span>: <span style="color:#d88">var</span>(--black);
+}
+
+<span class="hljs-selector-class">.histogram__right-side</span> {
+}
+
+<span class="hljs-selector-class">.histogram__link</span> {
+    <span style="color:#d88">font-family</span>: <span style="color:#d88">'Inter'</span>;
+    <span style="color:#d88">font-style</span>: normal;
+    <span style="color:#d88">font-weight</span>: <span class="hljs-number">400</span>;
+    <span style="color:#d88">font-size</span>: <span class="hljs-number">16px</span>;
+    <span style="color:#d88">line-height</span>: <span class="hljs-number">24px</span>;
+    <span style="color:#d88">text-align</span>: right;
+    <span style="color:#d88">color</span>: <span style="color:#d88">var</span>(--blue);
+    <span style="color:#d88">text-decoration</span>: none;
+}
+
+<span class="hljs-selector-class">.histogram__link</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span style="color:#d88">border-bottom</span>: <span class="hljs-number">1px</span> solid <span style="color:#d88">var</span>(--blue);
+}
+
+<span class="hljs-selector-class">.histogram__bar</span> {
+    <span style="color:#d88">display</span>: flex;
+    <span style="color:#d88">align-items</span>: flex-end;
+    <span style="color:#d88">gap</span>: <span class="hljs-number">1px</span>;
+    <span style="color:#d88">height</span>: <span class="hljs-number">50px</span>;
+    <span style="color:#d88">margin-top</span>: <span class="hljs-number">39px</span>;
+}
+
+<span class="hljs-selector-class">.histogram__bar_preview</span> {
+    <span style="color:#d88">width</span>: <span class="hljs-number">280px</span>;
+}
+
+<span class="hljs-selector-class">.histogram__bars</span> {
+    <span style="color:#d88">background</span>: <span style="color:#d88">var</span>(--blue);
+    <span style="color:#d88">flex</span>: <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">9px</span>;
+    <span style="color:#d88">animation</span>: showUp <span class="hljs-number">0.6s</span> ease-out;
+}
+
+@<span style="color:white;font-weight:bold">keyframes</span> showUp {
+    0% {
+        <span style="color:#d88">transform</span>: <span style="color:#d88">scaleY</span>(0);
+        <span style="color:#d88">transform-origin</span>: bottom center;
+    }
+    50% {
+        <span style="color:#d88">transform</span>: <span style="color:#d88">scaleY</span>(0);
+        <span style="color:#d88">transform-origin</span>: bottom center;
+    }
+    100% {
+        <span style="color:#d88">transform</span>: <span style="color:#d88">scaleY</span>(1);
+        <span style="color:#d88">transform-origin</span>: bottom center;
+    }
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer page__footer">
+            <div class="container">
+                <div class="footer__template">
+                    <h5 class="footer__template-title">Reusable component library</h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

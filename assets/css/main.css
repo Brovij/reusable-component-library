@@ -1,0 +1,76 @@
+@import './normalize.css';
+@import '../fonts/fonts.css';
+
+@import './button.css';
+@import './accordion.css';
+@import './histogram.css';
+@import './skeleton.css';
+@import './tooltip.css';
+@import './modal.css';
+@import './calendar.css';
+@import './avatar.css';
+@import './checkbox.css';
+@import './radio.css';
+@import './toggler.css';
+@import './input.css';
+@import './burger-menu.css';
+
+@import './page.css';
+@import './container.css';
+@import './header.css';
+@import './preview.css';
+@import './footer.css';
+@import './burger.css';
+@import './card.css';
+@import './tabs.css';
+@import './content.css';
+@import './menu.css';
+@import './detail.css';
+
+:root {
+    --white: #FFFFFF;
+    --black: #212429;
+    --blue: #4263EB;
+    --red: #F03D3E;
+    --purple: #7048E8;
+    --gray-1: #F8F9FA;
+    --gray-2: #DDE2E5;
+    --gray-3: #ACB5BD;
+    --gray-4: #495057;
+
+    --border-color: var(--gray-2);
+    --font-color: var(--black);
+    --hover-color: var(--black);
+    --main-bg: var(--white);
+    --card-bg: var(--white);
+    --detail-bg: var(--white);
+    --tooltip-color: var(--black);
+
+    --error: var(--red);
+    --success: var(--blue);
+
+    --breakpoint-sm: 320px;
+    --breakpoint-md: 768px;
+}
+
+html[data-theme-dark] {
+    --main-bg: var(--black);
+    --font-color: var(--gray-3);
+    --logo-icon: var(--white);
+    --card-bg: var(--gray-4);
+    --border-color: var(--white);
+    --detail-bg: var(--gray-4);
+    --hover-color: var(--white);
+    --tooltip-color: var(--blue);
+}
+
+html[data-theme-dark-mobile] {
+    --main-bg: var(--black);
+    --font-color: var(--gray-3);
+    --logo-icon: var(--white);
+    --card-bg: var(--gray-4);
+    --border-color: var(--white);
+    --detail-bg: var(--gray-4);
+    --hover-color: var(--white);
+    --tooltip-color: var(--blue);
+}

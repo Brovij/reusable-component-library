@@ -1,0 +1,69 @@
+.skeleton {
+    border: 1px solid var(--gray-3);
+    border-radius: 8px;
+    padding: 24px 40px 32px 24px;
+}
+
+.skeleton__top-side {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.skeleton__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--gray-2);
+    margin-right: 16px;
+}
+
+.skeleton__inner {
+    width: 100%;
+}
+
+.skeleton__line {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton__line:last-child {
+    margin-bottom: 0;
+}
+
+.skeleton__line_small {
+    width: 30%;
+}
+
+.skeleton__line_middle {
+    width: 70%;
+}
+
+.skeleton__bottom-side {
+}
+
+.skeleton__line,
+.skeleton__line_small,
+.skeleton__line_middle {
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: transfusionOfFlowers;
+    animation-timing-function: linear;
+    background: var(--gray-2);
+    background: linear-gradient(267.58deg, var(--gray-2) 0%, var(--gray-1) 80%, var(--gray-2) 100%);
+    background-size: 200%;
+    display: inline-block;
+}
+
+@keyframes transfusionOfFlowers {
+    0% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}

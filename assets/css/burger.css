@@ -1,0 +1,23 @@
+.burger {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.burger__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.burger__icon {
+    width: 34px;
+    height: 34px;
+    color: var(--font-color);
+}
+
+.burger__logo {
+    width: 110px;
+    height: 32px;
+    color: var(--font-color);
+}

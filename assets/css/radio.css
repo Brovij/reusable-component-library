@@ -1,0 +1,80 @@
+.radio {
+    display: inline-block;
+    position: relative;
+}
+
+.radio__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.radio__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.radio__control {
+    width: 28px;
+    height: 28px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio__circle {
+    display: none;
+    width: 18px;
+	height: 18px;
+	border-radius: 50%;
+    background: var(--blue);
+	position: relative;
+	top: 36%;
+	left: 37%;
+	transform: translate(-50%, -50%);
+}
+
+.radio__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--font-color);
+}
+
+.radio__input:checked ~ .radio__state .radio__control {
+    border-color: var(--blue);
+    border: 2px solid var(--blue);
+    animation: pulse 0.5s;
+}
+
+.radio__input:checked ~ .radio__state .radio__circle {
+    display: block;
+}
+
+.radio__input:disabled ~ .radio__state .radio__control {
+    background: var(--gray-2);
+}
+
+.radio__input:disabled ~ .radio__state .radio__circle {
+	display: none;
+}
+
+.radio__input:disabled ~ .radio__state .radio__title {
+    color: var(--gray-2);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #bdc3c7;
+    }
+    100% {
+        box-shadow: 0 0 0 1.5rem rgba(189, 195, 199, 0);
+    }
+}

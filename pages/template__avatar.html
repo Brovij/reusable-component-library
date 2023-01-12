@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Avatar</title>
+</head>
+<body>
+    <div class="page page_template">
+        <header class="header page__header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__burger">
+                        <button class="burger" id="burger-menu-open">
+                            <div class="burger__wrapper">
+                                <svg class="burger__icon">
+                                    <use href="../assets/images/sprite.svg#burger">
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="burger-menu" id="burger-menu">
+                            <div class="burger-menu__header">
+                                <button class="burger" id="burger-menu-close">
+                                    <svg class="burger__icon">
+                                        <use href="../assets/images/sprite.svg#burger-close">
+                                    </svg>
+                                </button>
+                                <svg class="burger__logo">
+                                    <use href="../assets/images/sprite.svg#logo">
+                                </svg>
+                            </div>
+                            <div class="burger-menu__body">
+                                <div class="burger-menu__toggler">
+                                    <div class="burger-menu__text">Dark mode</div>
+                                    <label class="toggler">
+                                        <input type="checkbox" class="toggler__input" id="theme-changer-mobile">
+                                        <div class="toggler__state">
+                                            <div class="toggler__control">
+                                                <div class="toggler__switcher"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <nav class="menu">
+                                    <ul class="menu__list">
+                                        <h4 class="menu__title">Elements</h4>
+                                        <a href="./template__avatar.html" class="menu__item">Avatar</a>
+                                        <a href="./template__custom.html" class="menu__item">Custom form elements</a>
+                                        <a href="./template__histogram.html" class="menu__item">Histogram</a>
+                                    </ul>
+                                    <ul class="menu__list">
+                                        <h4 class="menu__title">Containers</h4>
+                                        <a href="./template__tooltip.html" class="menu__item">Tooltip</a>
+                                        <a href="./template__calendar.html" class="menu__item">Calendar</a>
+                                        <a href="./template__modal.html" class="menu__item">Modal dialog</a>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__logo">
+                        <svg class="header__icon">
+                            <use href="../assets/images/sprite.svg#logo">
+                        </svg>
+                    </div>
+                    <div class="header__right-side">
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <a class="header__item" href="../index.html">Components</a>
+                                <a class="header__item" href="#" title="Inactive">About</a>
+                                <a class="header__item" href="#" title="Inactive">Contact</a>
+                            </ul>
+                        </nav>
+                        <div class="header__toggler">
+                            <svg class="header__sun">
+                                <use href="../assets/images/sprite.svg#sun">
+                            </svg>
+                            <label class="toggler">
+                                <input type="checkbox" class="toggler__input" id="theme-changer">
+                                <div class="toggler__state">
+                                    <div class="toggler__control">
+                                        <div class="toggler__switcher"></div>
+                                    </div>
+                                </div>
+                            </label>
+                            <svg class="header__moon">
+                                <use href="../assets/images/sprite.svg#moon">
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="preview page__preview">
+            <div class="container">
+                <div class="content">
+                    <div class="content__inner">
+                        <nav class="menu content__menu">
+                            <ul class="menu__list">
+                                <h4 class="menu__title">Elements</h4>
+                                <a href="./template__avatar.html" class="menu__item">Avatar</a>
+                                <a href="./template__custom.html" class="menu__item">Custom form elements</a>
+                                <a href="./template__histogram.html" class="menu__item">Histogram</a>
+                            </ul>
+                            <ul class="menu__list">
+                                <h4 class="menu__title">Containers</h4>
+                                <a href="./template__tooltip.html" class="menu__item">Tooltip</a>
+                                <a href="./template__calendar.html" class="menu__item">Calendar</a>
+                                <a href="./template__modal.html" class="menu__item">Modal dialog</a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="detail content__detail">
+                        <h3 class="detail__title">Avatar</h3>
+                        <div class="detail__component">
+                            <div class="avatar">
+                                <img class="avatar__image" src="../assets/images/avatar.png" alt="Аватар">
+                            </div>
+                        </div>
+                        <div class="tabs">
+                            <input class="tabs__input" type="radio" name="tabs" id="html-tab" checked>
+                            <input class="tabs__input" type="radio" name="tabs" id="css-tab">
+                            <div class="tabs__menu">
+                                <label class="tabs__label" for="html-tab">HTML</label>
+                                <label class="tabs__label" for="css-tab">CSS</label>
+                            </div>
+                            <div class="tabs__content tabs__content_html">
+<pre><code style="display:block;overflow-x:auto;padding:0.5em;background:#444;color:#ddd"><span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">div</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"avatar"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span style="color:#d88;font-weight:bold">img</span> <span class="hljs-attr">class</span>=<span style="color:#d88">"avatar__image"</span> <span class="hljs-attr">src</span>=<span style="color:#d88">"../../assets/images/avatar.png"</span> <span class="hljs-attr">alt</span>=<span style="color:#d88">"Аватар"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span style="color:#d88;font-weight:bold">div</span>&gt;</span></code></pre>
+                            </div>
+                            <div class="tabs__content tabs__content_css">
+<pre><code style="display:block;overflow-x:auto;padding:0.5em;background:#444;color:#ddd"><span class="hljs-selector-class">.avatar</span> {
+    <span style="color:#d88">width</span>: <span class="hljs-number">160px</span>;
+    <span style="color:#d88">height</span>: <span class="hljs-number">160px</span>;
+}
+
+<span class="hljs-selector-class">.avatar__image</span> {
+    <span style="color:#d88">width</span>: <span class="hljs-number">100%</span>;
+    <span style="color:#d88">height</span>: <span class="hljs-number">100%</span>;
+    <span style="color:#d88">border-radius</span>: <span class="hljs-number">50%</span>;
+    <span style="color:#d88">object-fit</span>: cover;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer page__footer">
+            <div class="container">
+                <div class="footer__template">
+                    <h5 class="footer__template-title">Reusable component library</h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

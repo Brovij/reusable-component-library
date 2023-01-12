@@ -1,0 +1,27 @@
+.content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'aside detail';
+}
+
+.content__inner {}
+
+.content__menu {
+    grid-area: "aside";
+}
+
+.content__detail {
+    grid-area: "detail";
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .content__inner {
+        display: none;
+    }
+}
